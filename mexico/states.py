@@ -1,8 +1,13 @@
+import pandas as pd
+
+
 class States:
     """
     Returns characteristics about the states of Mexico
     """
+    pass
 
-    def __init__(self):
-        self.oaxaca = None
+def create_state_names_list(cls):
+    pass
+
 
