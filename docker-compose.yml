@@ -1,7 +1,7 @@
 version: "3"
 services:
   package:
-    image: credijusto/zabludovsky
+    image: joseangel-sc/latest
     build:
       context: .
       dockerfile: Dockerfile
