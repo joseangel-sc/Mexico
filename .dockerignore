@@ -1,0 +1,14 @@
+# git
+.git
+.gitattributes
+.gitignore
+
+# JetBrains
+.idea
+
+*.md
+
+Makefile
+
+datasource-cache/
+
