@@ -1,0 +1,9 @@
+version: "3"
+services:
+  package:
+    image: credijusto/zabludovsky
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/usr/src/app
