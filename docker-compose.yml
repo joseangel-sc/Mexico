@@ -1,7 +1,7 @@
 version: "3"
 services:
   package:
-    image: joseangel-sc/latest
+    image: joseangel-sc/mexico
     build:
       context: .
       dockerfile: Dockerfile
