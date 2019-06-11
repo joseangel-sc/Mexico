@@ -1,15 +1,9 @@
-FROM python:3.8.0a4-stretch
+FROM python:3.6.1-alpine
 
-RUN apt-get update -y \
- && apt-get upgrade -y \
- && apt-get install -y \
-    gettext
+RUN apk add --update build-base bash
 
-WORKDIR /usr/src/app
+WORKDIR /opt/app
 
-RUN pip install pip==19.1.1
+COPY ./ /opt/app
 
-COPY requirements.txt ./
-RUN bash -c "pip install -r <(envsubst < requirements.txt)"
-
-COPY . .
+RUN pip install -r /opt/app/requirements.txt
