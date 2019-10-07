@@ -1,3 +1,4 @@
+from datetime import date
 from decimal import Decimal
 
 from .states import STATES
@@ -20,4 +21,5 @@ population = 126577691
 area_km2 = 1972550
 area_mi2 = 761605.8128  #  area_km2 / 2.59
 
+independence_date = date(9, 16, 1810)
 
