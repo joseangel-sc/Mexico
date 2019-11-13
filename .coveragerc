@@ -1,0 +1,11 @@
+[run]
+source = .
+parallel = True
+concurrency = multiprocessing
+omit =
+    setup.py
+    env/*
+[report]
+exclude_lines =
+    pragma: no cover
+    self.fail
