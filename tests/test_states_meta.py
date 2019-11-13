@@ -13,4 +13,3 @@ class TestStatesMeta(TestCase):
 
     def test_states_attr(self) -> None:
         pass
-g
