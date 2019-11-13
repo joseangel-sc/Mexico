@@ -1,6 +1,6 @@
 from datetime import date
 
-from .states import STATES
+from .states_meta import STATES
 
 __appname__ = "mx"
 __version__ = "0.0.1"
