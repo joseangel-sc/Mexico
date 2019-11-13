@@ -1,9 +1,12 @@
-FROM python:3.6.1-alpine
+FROM python:3.8-slim-buster
 
-RUN apk add --update build-base bash
+RUN apt-get update
 
 WORKDIR /opt/app
 
 COPY ./ /opt/app
 
-RUN pip install -r /opt/app/requirements.txt
+RUN pip install pip==19.3.1
+RUN pip install --default-timeout=120 --trusted-host pypi.python.org \
+    --trusted-host files.pythonhosted.org \
+    --trusted-host pypi.org -r /opt/app/requirements.txt
