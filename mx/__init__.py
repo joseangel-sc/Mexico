@@ -1,7 +1,6 @@
 from datetime import date
-from decimal import Decimal
 
-from .states import STATES
+from .states_meta import STATES
 
 __appname__ = "mx"
 __version__ = "0.0.1"
@@ -21,5 +20,5 @@ population = 126577691
 area_km2 = 1972550
 area_mi2 = 761605.8128  #  area_km2 / 2.59
 
-independence_date = date(9, 16, 1810)
+independence_date = date(1810, 9, 16)
 

@@ -12,7 +12,7 @@ build:
 	docker tag $(IMAGE_TAG):$(REVISION) $(IMAGE_TAG):latest
 
 test:
-	$(RUN) coverage run -m unittest discover
+	python -m unittest
 
 coverage: test
 	$(RUN) coverage combine
